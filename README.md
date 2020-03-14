@@ -1,6 +1,5 @@
 # MyMATLAB
-This page is not for experts , this is for beginners for MATLAB .
-I will upload what I practice occassionally. 
-References to the problems will be mentioned inside the MATLAB file itself.
-Any exclusive reference I will upadte in this README.md
+This page merely my codes some I may have practiced and I may have published to help.
+
+Let me know if you have any trouble at "N28067010@gs.ncku.edu.tw"
 
