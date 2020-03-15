@@ -80,7 +80,7 @@ grid on
 end
 %legend(x,'Stable Positive and Negative')
 
-
+hold on
 for i = 5:8
     
 [~,x] = Integrator(G_var,fun,Pert_EigVec(:,i),tspan,'forward');
