@@ -36,13 +36,13 @@ mu = G_var.Constants.mu;
 fun = G_var.IntFunc.EOM;
 
 
-tspan = [0 7];
+tspan = [0 10];
 L1_xyPos = G_var.LagPts.L1';
 L2_xyPos = G_var.LagPts.L2';
-L1_StableEigVec = G_var.LagPts.EigVec.L1(:,1);
-L1_UStableEigVec = G_var.LagPts.EigVec.L1(:,2);
-L2_StableEigVec = G_var.LagPts.EigVec.L2(:,1);
-L2_UStableEigVec = G_var.LagPts.EigVec.L2(:,2);
+L1_StableEigVec = G_var.LagPts.SEigVec.L1;
+L1_UStableEigVec = G_var.LagPts.USEigVec.L1;
+L2_StableEigVec = G_var.LagPts.SEigVec.L2;
+L2_UStableEigVec = G_var.LagPts.USEigVec.L2;
 
 n = size(L1_StableEigVec,1);
 
@@ -116,4 +116,4 @@ title('\it{Manifolds of Eqilibrium Points}')
 
 set(gcf,'PaperPosition',[0 0 5 5]);
 set(gcf,'PaperSize',[5 5])
-%%saveas(gcf, 'G:\My Drive\MATLAB\Matlb3BP\ThreeBodyProblemCodes\3BPRefresh\Figures\ManifoldsAtEqPoints', 'pdf');
+saveas(gcf, 'G:\My Drive\MATLAB\Matlb3BP\ThreeBodyProblemCodes\3BPRefresh\Figures\ManifoldsAtEqPoints', 'pdf');
